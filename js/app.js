@@ -12,7 +12,7 @@ const countryDataLoad = async (inputValue = 'bangladesh') => {
     setTimeout(() => {
         displayCountryData(data[0]);
 
-    }, 1000)
+    }, 500)
 
 
 }
