@@ -60,13 +60,16 @@ inputBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const inputValue = inputField.value;
 
-    if (isNaN(inputValue)) {
-        const inputCase = inputValue.toLowerCase();
+
+    const inputCase = inputValue.toLowerCase();
+    if (inputCase) {
         countryDataLoad(inputCase)
+
     }
-    else {
-        alert('enter valid country name')
-    }
+    inputField.value = '';
+
+
+
 
 
 })
